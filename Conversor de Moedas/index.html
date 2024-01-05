@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Conversor</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">
+          Conversor de moedas
+        </h1>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+      </div>
+      <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+        <img src="https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Convers%C3%A3o+1.png">
+      </a>
+      <div class='form-group'>
+        <label for="valorEmReal">R$</label>
+        <input 
+          type="number"
+          name="valorEmReal"
+          id="valorEmReal"
+          class="input"
+          step='0.01'
+          min='0.00'
+          max='9999999999.99'
+          value=''
+          tabindex="1"
+          onclick="ativarBotao()"
+          onchange="ativarBotao()"
+          autofocus
+          required
+        />
+      </div>
+      
+      <div class="form-group">
+        <input 
+        type="radio"
+        id='dolar'
+        name="moedaEstrangeira"
+        class="input radio"
+        value='Dólar'
+        tabindex="2"
+        /> <label for="dolar">Dólar</label>
+
+        <input 
+        type="radio"
+        id='euro'
+        name="moedaEstrangeira"
+        class="input radio"
+        value='Euro'
+        tabindex="3"
+        /> <label for="euro">Euro</label>
+
+        <input 
+        type="radio"
+        id='libra'
+        name="moedaEstrangeira"
+        class="input radio"
+        value='Libra'
+        tabindex="4"
+        /> <label for="libra">Libra</label>
+
+        <input 
+        type="radio"
+        id='bitcoins'
+        name="moedaEstrangeira"
+        class="input radio"
+        value='Bitcoins'
+        tabindex="5"
+        /> <label for="bitcoins">Bitcoins</label>
+      </div>
+
+      <div class="form-group">
+        <button class='desativado botao' id='btnConverter'
+        onclick="ativarBotao();" disabled>Converter</button>
+        <button type="reset" class='botao' id='btnLimpar' tabindex="7">Limpar</button>
+      </div>
+
+      <div class="instrucoes">
+        <p class='centro' id='aviso'>Escolha a moeda, digite o valor e converta</p>
+      </div>
+<script src="js/conversor.js"></script>
+</body>
+</html>
