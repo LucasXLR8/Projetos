@@ -1,0 +1,6 @@
+database cliente JDBC - Weijan Chen
+Error Lens - Alexander
+Format HTML in PHP - rifi2k
+mysql - Weijan Chen
+PHP Intelephense - Ben Mewburn
+tabnine
